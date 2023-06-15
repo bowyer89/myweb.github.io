@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en"></html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>PenNation</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Product Page</h2>
+
+    <div class="product-container">
+      <div class="product" id="product1">
+        <h3>White & Gold</h3>
+        <img src="pen.jpg" alt="white and gold pen">
+        <p>
+            £59.99
+        </p>
+        <button onclick="addToCart('Product 1')">Add to Cart</button>
+      </div>
+
+      <div class="product" id="product2">
+        <h3>Steel pen</h3>
+        <img src="Parker_pen.jpg" alt="steel pen">
+        <p>
+            £119.99
+        </p>
+        <button onclick="addToCart('Product 2')">Add to Cart</button>
+      </div>
+    </div>
+
+    <div id="cart">
+      <h3>Cart:</h3>
+      <ul id="cart-items"></ul>
+      <div id="cart-total">
+        <p>Total: £<span id="total-amount">0.00</span></p>
+      </div>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+  </main>
+
+  <footer>
+    Pen Nation © 2023 | Privacy Policy | Terms of Service
+    Pen Nation is a registered trademark, all rights reserved.
+</footer>
+
+</body>
+</html>
